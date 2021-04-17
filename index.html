@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/img/pinataFavicon.png" type="image/png">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+
+    <title>Liami Pedidos</title>
+</head>
+<body>
+    <header class="fondo-header">
+        <div class="barra contenedor">
+            <div class="img-logo">
+                <a href="#"><img src="/img/logoWebLiami.png" alt="Logo Liami"></a>
+                
+            </div>
+            <nav class="navegacion">
+                <div class="btn-hamburger">
+                    <div class="linea linea1"></div>
+                    <div class="linea linea2"></div>
+                    <div class="linea linea3"></div>
+                </div>
+            </nav>
+            <ul class="enlaces">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="pedidos.html">Pedidos</a></li>
+                <li><a href="clientes.html">Clientes</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="egresos.html">Egresos</a></li>
+            </ul>
+           
+        </div>
+    </header>
+    <main class="main-pagina contenedor seccion">
+        <h1>Inicio</h1>
+        <div class="linea-h1"></div>
+        <div class="seccion-calendario">
+            <div class="calendario-titulo">
+                <i class="far fa-calendar-alt"></i>
+                <h2>Calendario de Entregas</h2>
+            </div>
+            <div class="calendario contenedor">
+                <header class="calendario-header">
+                    <i class="fas fa-chevron-left ant"></i>
+                    <div class="mes-fecha">
+                        <h3 class="mes-actual"></h3>
+                        <h4 class="fecha-actual"></h4>
+                    </div>
+                    <i class="fas fa-chevron-right sig"></i>
+                </header>
+                <div class="main-calendario">
+                    <div class="dias-semana">
+                        <div class="dia-semana">Lun</div>
+                        <div class="dia-semana">Mar</div>
+                        <div class="dia-semana">Mie</div>
+                        <div class="dia-semana">Jue</div>
+                        <div class="dia-semana">Vie</div>
+                        <div class="dia-semana">Sab</div>
+                        <div class="dia-semana">Dom</div>
+                    </div>
+                    <div class="mes-completo"></div>
+                </div>
+            </div>
+        </div>
+        <div class="evento-dia">
+            <i class="btn-cerrar fas fa-times"></i>
+        </div>
+        <div class="lista-pendientes seccion">
+            <i class="far fa-list-alt"></i>
+            <h2>Lista de Pendientes y Compras</h2>
+        </div>
+
+    </main>
+    <script src="/js/scripts.js" type="module"></script>
+</body>
+</html>
