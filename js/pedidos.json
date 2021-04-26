@@ -6,7 +6,7 @@
             "numeroTelefono": "333-444-78-88",
             "zonaEntrega": "Tabachines",
             "diaEntrega": 25,
-            "mesEntrega": 4,
+            "mesEntrega": 5,
             "anioEntrega": 2021,
             "cantidadPinatas": 2
         },
@@ -16,7 +16,7 @@
             "numeroTelefono": "333-444-78-88",
             "zonaEntrega": "Martinica",
             "diaEntrega": 29,
-            "mesEntrega": 4,
+            "mesEntrega": 5,
             "anioEntrega": 2021,
             "cantidadPinatas": 3
         },
@@ -37,7 +37,7 @@
             "numeroTelefono": "333-444-78-88",
             "zonaEntrega": "Rancho Nuevo",
             "diaEntrega": 17,
-            "mesEntrega": 8,
+            "mesEntrega": 5,
             "anioEntrega": 2021,
             "cantidadPinatas": 1
         }
@@ -48,7 +48,7 @@
             "numeroTelefono": "333-444-78-88",
             "zonaEntrega": "Murray",
             "diaEntrega": 30,
-            "mesEntrega": 1,
+            "mesEntrega": 5,
             "anioEntrega": 2022,
             "cantidadPinatas": 1
         }
@@ -59,7 +59,7 @@
             "numeroTelefono": "333-444-78-88",
             "zonaEntrega": "Salt Lake",
             "diaEntrega": 2,
-            "mesEntrega": 12,
+            "mesEntrega": 5,
             "anioEntrega": 2021,
             "cantidadPinatas": 1
         }
