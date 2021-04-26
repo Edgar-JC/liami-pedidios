@@ -5,8 +5,8 @@
             "nombreCliente": "Edgar",
             "numeroTelefono": "333-444-78-88",
             "zonaEntrega": "Tabachines",
-            "diaEntrega": 25,
-            "mesEntrega": 5,
+            "diaEntrega": 20,
+            "mesEntrega": 4,
             "anioEntrega": 2021,
             "cantidadPinatas": 2
         },
@@ -16,7 +16,7 @@
             "numeroTelefono": "333-444-78-88",
             "zonaEntrega": "Martinica",
             "diaEntrega": 29,
-            "mesEntrega": 5,
+            "mesEntrega": 4,
             "anioEntrega": 2021,
             "cantidadPinatas": 3
         },
@@ -48,7 +48,7 @@
             "numeroTelefono": "333-444-78-88",
             "zonaEntrega": "Murray",
             "diaEntrega": 30,
-            "mesEntrega": 5,
+            "mesEntrega": 10,
             "anioEntrega": 2022,
             "cantidadPinatas": 1
         }
@@ -59,7 +59,7 @@
             "numeroTelefono": "333-444-78-88",
             "zonaEntrega": "Salt Lake",
             "diaEntrega": 2,
-            "mesEntrega": 5,
+            "mesEntrega": 7,
             "anioEntrega": 2021,
             "cantidadPinatas": 1
         }
