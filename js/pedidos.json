@@ -1,0 +1,67 @@
+{
+    "pedidos": [
+        {
+            "idPedido": 1,
+            "nombreCliente": "Edgar",
+            "numeroTelefono": "333-444-78-88",
+            "zonaEntrega": "Tabachines",
+            "diaEntrega": 25,
+            "mesEntrega": 4,
+            "anioEntrega": 2021,
+            "cantidadPinatas": 2
+        },
+        {
+            "idPedido": 2,
+            "nombreCliente": "Ashley",
+            "numeroTelefono": "333-444-78-88",
+            "zonaEntrega": "Martinica",
+            "diaEntrega": 29,
+            "mesEntrega": 4,
+            "anioEntrega": 2021,
+            "cantidadPinatas": 3
+        },
+        {
+            "idPedido": 3,
+            "nombreCliente": "Lia",
+            "numeroTelefono": "333-444-78-88",
+            "zonaEntrega": "Andares",
+            "diaEntrega": 2,
+            "mesEntrega": 5,
+            "anioEntrega": 2021,
+            "cantidadPinatas": 1
+        }
+        ,
+        {
+            "idPedido": 4,
+            "nombreCliente": "Betty",
+            "numeroTelefono": "333-444-78-88",
+            "zonaEntrega": "Rancho Nuevo",
+            "diaEntrega": 17,
+            "mesEntrega": 8,
+            "anioEntrega": 2021,
+            "cantidadPinatas": 1
+        }
+        ,
+        {
+            "idPedido": 5,
+            "nombreCliente": "Martin",
+            "numeroTelefono": "333-444-78-88",
+            "zonaEntrega": "Murray",
+            "diaEntrega": 30,
+            "mesEntrega": 1,
+            "anioEntrega": 2022,
+            "cantidadPinatas": 1
+        }
+        ,
+        {
+            "idPedido": 6,
+            "nombreCliente": "Curt",
+            "numeroTelefono": "333-444-78-88",
+            "zonaEntrega": "Salt Lake",
+            "diaEntrega": 2,
+            "mesEntrega": 12,
+            "anioEntrega": 2021,
+            "cantidadPinatas": 1
+        }
+    ]
+}
