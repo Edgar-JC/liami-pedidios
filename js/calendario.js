@@ -1,11 +1,11 @@
 export const calendarioEntregas = () => {
   const d = document;
   const fechaActual = new Date();
+  const click = null;
+  const archivo = "/js/pedidos.json";
 
-  //Obtener datos de JSON
+  //Obtener datos de JSON para marcar dias de entrega
   const obtenerDatosPedidos = () => {
-    const archivo = "/js/pedidos.json";
-
     fetch(archivo)
       .then((respuesta) => respuesta.json())
       .then((datos) => {
@@ -130,7 +130,40 @@ export const calendarioEntregas = () => {
       });
     };
 
+    const mostrarDatosPedido = () => {
+      fetch(archivo)
+        .then((respuesta) => respuesta.json())
+        .then((datos) => {
+          const { pedidos } = datos;
+          pedidos.forEach((element) => {
+            const {
+              idPedido,
+              nombreCliente,
+              numeroTelefono,
+              zonaEntrega,
+              diaEntrega,
+              mesEntrega,
+              anioEntrega,
+            } = element;
+            d.querySelectorAll(".dia").forEach((dia) => {
+              dia.addEventListener("click", () => {
+                if (
+                  dia.id === `dia${diaEntrega}-${mesEntrega}-${anioEntrega}`
+                ) {
+                  const datosPedido = d.createElement("div");
+                  datosPedido.textContent = `${idPedido}${nombreCliente}${numeroTelefono}${zonaEntrega}${diaEntrega}${mesEntrega}${anioEntrega}`;
+                  datosPedido.classList.add("datos-pedido");
+                  const fondoMensaje = d.querySelector(".evento-dia");
+                  fondoMensaje.appendChild(datosPedido);
+                }
+              });
+            });
+          });
+        });
+    };
+
     eventoVentana();
+    mostrarDatosPedido();
   };
 
   //Generar el renderizado de los siguientes o anteriores meses

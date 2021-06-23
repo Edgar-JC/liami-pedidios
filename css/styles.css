@@ -198,6 +198,18 @@ h4 {
     color: #2e005a;
 }
 
+/*-------- LISTA DE PEDIDOS DEL MES --------*/
+.entregas-mes {
+    background-color: #E0BBE4;
+}
+
+.datos-pedido{
+    color: white;
+    font-size: 3rem;
+}
+
+
+
 /*-------- CALENDARIO --------*/
 .calendario-titulo {
     text-align: center;
@@ -302,6 +314,10 @@ h4 {
     right: 5rem;
 }
 
+
+.fa-chevron-left, .fa-chevron-right {
+    font-size: 3rem;
+}
 
 
 
