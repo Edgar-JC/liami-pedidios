@@ -204,10 +204,35 @@ h4 {
 }
 
 .datos-pedido{
-    color: white;
-    font-size: 3rem;
+    background-color: white;
+    max-width: 25rem;
+    padding: 2rem;
+    margin: 20rem auto 0 auto;
 }
 
+.numero-pedido {
+    text-align: center !important;
+}
+
+.titulos-info{
+    color: black;
+    text-align: left;
+    font-size: 1.4rem;
+    position: relative;
+    padding-left: 4rem;
+}
+
+.titulos-info span {
+    color: violet;
+    font-size: 1.8rem;
+    display: block;
+}
+
+.fa-user, .fa-phone-alt, .fa-clipboard-list, .fa-map-marker-alt, .fa-money-bill-alt, .fa-images{
+    position: absolute;
+    font-size: 3rem;
+    
+}
 
 
 /*-------- CALENDARIO --------*/

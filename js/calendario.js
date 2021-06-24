@@ -130,6 +130,17 @@ export const calendarioEntregas = () => {
       });
     };
 
+    const cerrarVentanaEventos = () => {
+      const ventanaEvento = d.querySelector(".evento-dia");
+      const botonCerrar = d.querySelector(".btn-cerrar");
+
+      botonCerrar.addEventListener("click", () => {
+        ventanaEvento.style.visibility = "hidden";
+        const infoPedido = d.querySelector(".datos-pedido");
+        ventanaEvento.removeChild(infoPedido);
+      });
+    };
+
     const mostrarDatosPedido = () => {
       fetch(archivo)
         .then((respuesta) => respuesta.json())
@@ -140,10 +151,13 @@ export const calendarioEntregas = () => {
               idPedido,
               nombreCliente,
               numeroTelefono,
-              zonaEntrega,
+              tipoEntrega,
               diaEntrega,
               mesEntrega,
               anioEntrega,
+              pinatas,
+              total,
+              img,
             } = element;
             d.querySelectorAll(".dia").forEach((dia) => {
               dia.addEventListener("click", () => {
@@ -151,9 +165,16 @@ export const calendarioEntregas = () => {
                   dia.id === `dia${diaEntrega}-${mesEntrega}-${anioEntrega}`
                 ) {
                   const datosPedido = d.createElement("div");
-                  datosPedido.textContent = `${idPedido}${nombreCliente}${numeroTelefono}${zonaEntrega}${diaEntrega}${mesEntrega}${anioEntrega}`;
+                  const numeroPedido = `<p class="titulos-info numero-pedido">Numero de Pedido<span>${idPedido}</span></p>`;
+                  const nombrePedido = `<i class="fas fa-user"></i><p class="titulos-info">Nombre<span>${nombreCliente}</span></p>`;
+                  const telefonoPedido = `<i class="fas fa-phone-alt"></i><p class="titulos-info">Numero de Telefono<span>${numeroTelefono}</span></p>`;
+                  const pinatasPedido = `<i class="fas fa-clipboard-list"></i><p class="titulos-info">Pedido<span>${pinatas}</span></p>`;
+                  const entregaPedido = `<i class="fas fa-map-marker-alt"></i><p class="titulos-info">Entrega<span>${tipoEntrega}</span></p>`;
+                  const totalPedido = `<i class="fas fa-money-bill-alt"></i><p class="titulos-info">Total<span>${total}</span></p>`;
+                  const imgPedido = `<i class="fas fa-images"></i><p class="titulos-info">Imagenes<span>${img}</span></p>`;
                   datosPedido.classList.add("datos-pedido");
                   const fondoMensaje = d.querySelector(".evento-dia");
+                  datosPedido.innerHTML = `${numeroPedido}${nombrePedido}${telefonoPedido}${pinatasPedido}${entregaPedido}${totalPedido}${imgPedido}`;
                   fondoMensaje.appendChild(datosPedido);
                 }
               });
@@ -163,6 +184,7 @@ export const calendarioEntregas = () => {
     };
 
     eventoVentana();
+    cerrarVentanaEventos();
     mostrarDatosPedido();
   };
 
@@ -177,20 +199,12 @@ export const calendarioEntregas = () => {
   });
 
   //Funcion para cerrar la ventana de eventos
-  const cerrarVentanaEventos = () => {
-    const ventanaEvento = d.querySelector(".evento-dia");
-    const botonCerrar = d.querySelector(".btn-cerrar");
-
-    botonCerrar.addEventListener("click", () => {
-      ventanaEvento.style.visibility = "hidden";
-    });
-  };
 
   // const mensajeCalendario = `Pedido #${idPedido}\n${nombreCliente}\nTel. ${numeroTelefono}\nCol. ${zonaEntrega}\n${cantidadPinatas} ${
   //   cantidadPinatas > 1 ? "pinatas" : "pinata"
   // }`;
 
   // Invocacion de funciones
-  cerrarVentanaEventos();
+
   renderizadoMes();
 };

@@ -4,64 +4,113 @@
             "idPedido": 1,
             "nombreCliente": "Edgar",
             "numeroTelefono": "333-444-78-88",
-            "zonaEntrega": "Tabachines",
+            "tipoEntrega": "Tabachines",
             "diaEntrega": 20,
             "mesEntrega": 6,
             "anioEntrega": 2021,
-            "cantidadPinatas": 2
+            "pinatas": [
+                "Figura Woddy 90cm",
+                "Numero 2 Woddy 90cm"
+            ],
+            "total": "$550",
+            "img": [
+                "img1",
+                "img2"
+            ]
         },
         {
             "idPedido": 2,
             "nombreCliente": "Ashley",
             "numeroTelefono": "333-444-78-88",
-            "zonaEntrega": "Martinica",
+            "tipoEntrega": "Martinica",
             "diaEntrega": 29,
             "mesEntrega": 6,
             "anioEntrega": 2021,
-            "cantidadPinatas": 3
+            "pinatas": [
+                "Figura Woddy 90cm",
+                "Numero 2 Woddy 90cm"
+            ],
+            "total": "$550",
+            "img": [
+                "img1",
+                "img2"
+            ]
+            
         },
         {
             "idPedido": 3,
             "nombreCliente": "Lia",
             "numeroTelefono": "333-444-78-88",
-            "zonaEntrega": "Andares",
+            "tipoEntrega": "Andares",
             "diaEntrega": 2,
             "mesEntrega": 6,
             "anioEntrega": 2021,
-            "cantidadPinatas": 1
+            "pinatas": [
+                "Figura Woddy 90cm",
+                "Numero 2 Woddy 90cm"
+            ],
+            "total": "$550",
+            "img": [
+                "img1",
+                "img2"
+            ]
         }
         ,
         {
             "idPedido": 4,
             "nombreCliente": "Betty",
             "numeroTelefono": "333-444-78-88",
-            "zonaEntrega": "Rancho Nuevo",
+            "tipoEntrega": "Rancho Nuevo",
             "diaEntrega": 17,
             "mesEntrega": 6,
             "anioEntrega": 2021,
-            "cantidadPinatas": 1
+            "pinatas": [
+                "Figura Woddy 90cm",
+                "Numero 2 Woddy 90cm"
+            ],
+            "total": "$550",
+            "img": [
+                "img1",
+                "img2"
+            ]
         }
         ,
         {
             "idPedido": 5,
             "nombreCliente": "Martin",
             "numeroTelefono": "333-444-78-88",
-            "zonaEntrega": "Murray",
+            "tipoEntrega": "Murray",
             "diaEntrega": 30,
             "mesEntrega": 6,
             "anioEntrega": 2022,
-            "cantidadPinatas": 1
+            "pinatas": [
+                "Figura Woddy 90cm",
+                "Numero 2 Woddy 90cm"
+            ],
+            "total": "$550",
+            "img": [
+                "img1",
+                "img2"
+            ]
         }
         ,
         {
             "idPedido": 6,
             "nombreCliente": "Curt",
             "numeroTelefono": "333-444-78-88",
-            "zonaEntrega": "Salt Lake",
+            "tipoEntrega": "Salt Lake",
             "diaEntrega": 2,
             "mesEntrega": 7,
             "anioEntrega": 2021,
-            "cantidadPinatas": 1
+            "pinatas": [
+                "Figura Woddy 90cm",
+                "Numero 2 Woddy 90cm"
+            ],
+            "total": "$550",
+            "img": [
+                "img1",
+                "img2"
+            ]
         }
     ]
 }
