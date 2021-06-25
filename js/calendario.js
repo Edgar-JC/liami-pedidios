@@ -156,8 +156,8 @@ export const calendarioEntregas = () => {
               mesEntrega,
               anioEntrega,
               pinatas,
-              total,
               img,
+              total,
             } = element;
             d.querySelectorAll(".dia").forEach((dia) => {
               dia.addEventListener("click", () => {
@@ -166,15 +166,15 @@ export const calendarioEntregas = () => {
                 ) {
                   const datosPedido = d.createElement("div");
                   const numeroPedido = `<p class="titulos-info numero-pedido">Numero de Pedido<span>${idPedido}</span></p>`;
-                  const nombrePedido = `<i class="fas fa-user"></i><p class="titulos-info">Nombre<span>${nombreCliente}</span></p>`;
-                  const telefonoPedido = `<i class="fas fa-phone-alt"></i><p class="titulos-info">Numero de Telefono<span>${numeroTelefono}</span></p>`;
-                  const pinatasPedido = `<i class="fas fa-clipboard-list"></i><p class="titulos-info">Pedido<span>${pinatas}</span></p>`;
-                  const entregaPedido = `<i class="fas fa-map-marker-alt"></i><p class="titulos-info">Entrega<span>${tipoEntrega}</span></p>`;
-                  const totalPedido = `<i class="fas fa-money-bill-alt"></i><p class="titulos-info">Total<span>${total}</span></p>`;
-                  const imgPedido = `<i class="fas fa-images"></i><p class="titulos-info">Imagenes<span>${img}</span></p>`;
+                  const nombrePedido = `<i class="icono-info fas fa-user"></i><p class="titulos-info">Nombre<span>${nombreCliente}</span></p>`;
+                  const telefonoPedido = `<i class="icono-info fas fa-phone-square-alt"></i><p class="titulos-info">Numero de Telefono<span>${numeroTelefono}</span></p>`;
+                  const pinatasPedido = `<i class="icono-info fas fa-clipboard-list"></i><p class="titulos-info">Pedido<span>${pinatas}</span></p>`;
+                  const entregaPedido = `<i class="icono-info fas fa-map-marker-alt"></i><p class="titulos-info">Entrega<span>${tipoEntrega}</span></p>`;
+                  const imgPedido = `<i class="icono-info fas fa-file-image"></i><p class="titulos-info">Imagenes<span>${img}</span></p>`;
+                  const totalPedido = `<i class="icono-info fas fa-file-invoice-dollar"></i><p class="titulos-info">Total<span>${total}</span></p>`;
                   datosPedido.classList.add("datos-pedido");
                   const fondoMensaje = d.querySelector(".evento-dia");
-                  datosPedido.innerHTML = `${numeroPedido}${nombrePedido}${telefonoPedido}${pinatasPedido}${entregaPedido}${totalPedido}${imgPedido}`;
+                  datosPedido.innerHTML = `${numeroPedido}${nombrePedido}${telefonoPedido}${pinatasPedido}${entregaPedido}${imgPedido}${totalPedido}`;
                   fondoMensaje.appendChild(datosPedido);
                 }
               });

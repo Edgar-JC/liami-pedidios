@@ -12,11 +12,11 @@
                 "Figura Woddy 90cm",
                 "Numero 2 Woddy 90cm"
             ],
-            "total": "$550",
             "img": [
                 "img1",
                 "img2"
-            ]
+            ],
+            "total": "$550"
         },
         {
             "idPedido": 2,
@@ -30,11 +30,11 @@
                 "Figura Woddy 90cm",
                 "Numero 2 Woddy 90cm"
             ],
-            "total": "$550",
             "img": [
                 "img1",
                 "img2"
-            ]
+            ],
+            "total": "$550"
             
         },
         {
@@ -49,11 +49,11 @@
                 "Figura Woddy 90cm",
                 "Numero 2 Woddy 90cm"
             ],
-            "total": "$550",
             "img": [
                 "img1",
                 "img2"
-            ]
+            ],
+            "total": "$550"
         }
         ,
         {
@@ -68,11 +68,11 @@
                 "Figura Woddy 90cm",
                 "Numero 2 Woddy 90cm"
             ],
-            "total": "$550",
             "img": [
                 "img1",
                 "img2"
-            ]
+            ],
+            "total": "$550"
         }
         ,
         {
@@ -87,11 +87,11 @@
                 "Figura Woddy 90cm",
                 "Numero 2 Woddy 90cm"
             ],
-            "total": "$550",
             "img": [
                 "img1",
                 "img2"
-            ]
+            ],
+            "total": "$550"
         }
         ,
         {
@@ -106,11 +106,11 @@
                 "Figura Woddy 90cm",
                 "Numero 2 Woddy 90cm"
             ],
-            "total": "$550",
             "img": [
                 "img1",
                 "img2"
-            ]
+            ],
+            "total": "$550"
         }
     ]
 }

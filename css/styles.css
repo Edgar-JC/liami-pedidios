@@ -205,33 +205,36 @@ h4 {
 
 .datos-pedido{
     background-color: white;
-    max-width: 25rem;
+    max-width: 30rem;
     padding: 2rem;
     margin: 20rem auto 0 auto;
 }
 
-.numero-pedido {
-    text-align: center !important;
+.datos-pedido .numero-pedido {
+    text-align: center ;
+    padding-left: 0rem;
 }
 
 .titulos-info{
     color: black;
     text-align: left;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     position: relative;
-    padding-left: 4rem;
+    padding-left: 3.5rem;
+    font-weight: 600;
 }
 
 .titulos-info span {
     color: violet;
-    font-size: 1.8rem;
+    font-size: 2rem;
     display: block;
+    font-weight: 300;
 }
 
-.fa-user, .fa-phone-alt, .fa-clipboard-list, .fa-map-marker-alt, .fa-money-bill-alt, .fa-images{
+.icono-info {
     position: absolute;
     font-size: 3rem;
-    
+    margin-top: .1rem;
 }
 
 
