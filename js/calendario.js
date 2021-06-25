@@ -170,12 +170,20 @@ export const calendarioEntregas = () => {
                   const telefonoPedido = `<i class="icono-info fas fa-phone-square-alt"></i><p class="titulos-info">Numero de Telefono<span>${numeroTelefono}</span></p>`;
                   const pinatasPedido = `<i class="icono-info fas fa-clipboard-list"></i><p class="titulos-info">Pedido<span>${pinatas}</span></p>`;
                   const entregaPedido = `<i class="icono-info fas fa-map-marker-alt"></i><p class="titulos-info">Entrega<span>${tipoEntrega}</span></p>`;
-                  const imgPedido = `<i class="icono-info fas fa-file-image"></i><p class="titulos-info">Imagenes<span>${img}</span></p>`;
+                  const imgPedido = `<i class="icono-info fas fa-file-image"></i><p class="titulos-info titulo-img">Imagenes<span id="img1">Imagen 1</span><span id="img2">Imagen 2</span></p>`;
                   const totalPedido = `<i class="icono-info fas fa-file-invoice-dollar"></i><p class="titulos-info">Total<span>${total}</span></p>`;
                   datosPedido.classList.add("datos-pedido");
                   const fondoMensaje = d.querySelector(".evento-dia");
                   datosPedido.innerHTML = `${numeroPedido}${nombrePedido}${telefonoPedido}${pinatasPedido}${entregaPedido}${imgPedido}${totalPedido}`;
                   fondoMensaje.appendChild(datosPedido);
+                  const botonImg1 = d.querySelector("#img1");
+                  const botonImg2 = d.querySelector("#img2");
+                  botonImg1.addEventListener("click", () => {
+                    window.open(`${img[0]}`);
+                  });
+                  botonImg2.addEventListener("click", () => {
+                    window.open(`${img[1]}`);
+                  });
                 }
               });
             });
@@ -197,12 +205,6 @@ export const calendarioEntregas = () => {
     fechaActual.setMonth(fechaActual.getMonth() + 1);
     renderizadoMes();
   });
-
-  //Funcion para cerrar la ventana de eventos
-
-  // const mensajeCalendario = `Pedido #${idPedido}\n${nombreCliente}\nTel. ${numeroTelefono}\nCol. ${zonaEntrega}\n${cantidadPinatas} ${
-  //   cantidadPinatas > 1 ? "pinatas" : "pinata"
-  // }`;
 
   // Invocacion de funciones
 

@@ -231,6 +231,11 @@ h4 {
     font-weight: 300;
 }
 
+.titulo-img span{
+    text-decoration: underline currentColor;
+    cursor: pointer;
+}
+
 .icono-info {
     position: absolute;
     font-size: 3rem;
