@@ -125,7 +125,9 @@ export const calendarioEntregas = () => {
       const eventoDia = d.querySelector(".evento-dia");
       d.querySelectorAll(".dia").forEach((dia) => {
         dia.addEventListener("click", () => {
-          eventoDia.style.visibility = "visible";
+          if (dia.classList.contains("dia-entrega")) {
+            eventoDia.style.visibility = "visible";
+          }
         });
       });
     };

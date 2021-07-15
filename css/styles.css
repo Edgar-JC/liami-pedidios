@@ -1,3 +1,12 @@
+:root {
+    --color-morado: #2e005a;
+    --color-blanco: #ffffff;
+    --color-violeta: #F512F1;
+    --color-gris-morado: #957DAD;
+    --color-gris-lila: #E0BBE4;
+}
+
+
 html {
     box-sizing: border-box;
     font-size: 62.5%;
@@ -36,15 +45,16 @@ li {
 h1 {
     text-align: center;
     margin-bottom: 0;
-    font-size: 3.5rem;
+    font-size: 3.6rem;
 }
 
 .linea-h1 {
-    border-top: #2e005a solid 2px;
+    border-top: var(--color-morado) solid 2px;
     max-width: 85rem;
     margin: 0 auto;
     margin-bottom: 2rem;
 }
+
 
 
 h3 {
@@ -74,7 +84,7 @@ h4 {
 /*          HEADER          */
 /*--------------------------*/
 .fondo-header {
-    background-color: #2e005a;
+    background-color: var(--color-morado)
     
 }
 
@@ -82,7 +92,7 @@ h4 {
 .linea {
     height: .3rem;
     width: 2.5rem;
-    background-color: white;
+    background-color: var(--color-blanco);
     margin: .5rem;
     border-radius: 1rem;
     transition: all 0.3s ease;
@@ -91,6 +101,7 @@ h4 {
 /*-------- Animacion Menu --------*/
 .toggle .linea1 {
     transform: rotate(-45deg) translate(-5px, 6px);
+    
 }
 .toggle .linea2 {
     opacity: 0;
@@ -124,9 +135,45 @@ h4 {
     margin-right: 2rem;
 }
 
+
+
 @media (min-width: 1024px) {
     .btn-hamburger {
         display: none;
+    }
+}
+
+.login-info {
+    color: var(--color-blanco);
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+@media (min-width: 1024px) {
+    .login-info {
+        justify-content: flex-end;
+        margin-top: 0;
+
+    }
+}
+
+.login-info i {
+    font-size: 3rem;
+    margin-right: 1rem;
+}
+
+
+.usuario-info, .log-out {
+    display: flex;
+    align-items: center;
+}
+
+@media (min-width: 1024px) {
+    .log-out {
+        margin-left: 2rem;
     }
 }
 
@@ -137,26 +184,17 @@ h4 {
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: #2e005a;
+    background-color: var(--color-morado);
     display: flex;
     flex-direction: column;
     align-items: center;
     transition: transform ease .5s;
     transform: translate(100%, 0);
-    justify-content: space-between;
-    padding-top: 5rem;
 }
 
 @media (min-width: 1024px) {
     .enlaces {
-        transform: translate(0, 0);
-        width: auto;
-        height: auto;
-        padding: 0;
-        transition: none;
-        z-index: 100;
-        flex-direction: row;
-        position: static;
+        
     }
 }
 
@@ -165,17 +203,28 @@ h4 {
 }
 
 .enlaces li {
-    height: 25vh;
+    height: 15vh;
     font-size: 1.8rem;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    
 }
 
+.enlaces li i {
+    color: var(--color-blanco);
+    font-size: 3rem;
+}
+
+
 .enlaces a{
-    color: white;
+    color: var(--color-blanco);
     text-decoration: none;
+    margin-left: 1rem;
 }
 
 .enlaces a:hover {
-    color: #F512F1;
+    color: var(--color-violeta);
     transition: ease-in-out .3s;
 }
 
@@ -195,16 +244,12 @@ h4 {
 .far {
     font-size: 2.5rem;
     margin-right: 2rem;
-    color: #2e005a;
+    color: var(--color-morado);
 }
 
 /*-------- LISTA DE PEDIDOS DEL MES --------*/
-.entregas-mes {
-    background-color: #E0BBE4;
-}
-
 .datos-pedido{
-    background-color: white;
+    background-color: var(--color-blanco);
     max-width: 35rem;
     padding: 2rem;
     margin: 20rem auto 0 auto;
@@ -219,7 +264,7 @@ h4 {
 
 
 .titulos-info{
-    color: #2e005a;
+    color: var(--color-morado);
     text-align: left;
     font-size: 1.5rem;
     position: relative;
@@ -229,7 +274,7 @@ h4 {
 }
 
 .titulos-info span {
-    color: violet;
+    color: var(--color-violeta);
     font-size: 2rem;
     display: block;
     font-weight: 300;
@@ -244,7 +289,7 @@ h4 {
     position: absolute;
     font-size: 3rem;
     margin-top: .35rem;
-    color: #2e005a
+    color: var(--color-morado)
 }
 
 
@@ -270,14 +315,14 @@ h4 {
 .calendario {
     height: auto;
     text-align: center;
-    background-color: #957DAD;
-    color: #ffffff;
+    background-color: var(--color-gris-morado);
+    color: var(--color-blanco);
     max-width: 80rem;
     padding-top: 1.5rem;
 }
 
 .main-calendario {
-    background-color: #E0BBE4;
+    background-color: var(--color-gris-lila);
     padding: 0 1rem 1rem 1rem;
 }
 
@@ -310,7 +355,7 @@ h4 {
 }
 
 .dia:hover{
-    border: #957DAD solid 2px ;
+    border: var(--color-gris-morado) solid 2px ;
 }
 
 .fecha-actual {
@@ -318,7 +363,7 @@ h4 {
 }
 
 .dia-actual {
-    background-color: #957DAD;
+    background-color: var(--color-gris-morado);
 }
 
 .dia-mes-ant, .dia-mes-sig {
@@ -326,7 +371,7 @@ h4 {
 }
 
 .dia-entrega {
-    color: #F512F1;
+    color: var(--color-violeta);
     font-weight: 600;
 }
 
@@ -344,7 +389,7 @@ h4 {
 }
 
 .btn-cerrar {
-    color: white;
+    color: var(--color-blanco);
     font-size: 4rem;
     cursor: pointer;
     position: absolute;
