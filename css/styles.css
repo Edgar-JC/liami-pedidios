@@ -194,8 +194,33 @@ h4 {
 
 @media (min-width: 1024px) {
     .enlaces {
-        
+        transform: translate(0,0);
+        position: static;
+        transition: none;
+        align-items: flex-start;
+        width: max-content;
+        padding: 5rem;
+        background-color: gray;
     }
+
+    .enlaces li {
+        padding-bottom: 5rem;
+        height: auto;
+        border: black 1px solid;
+    }
+
+    .contenido-principal{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .barra-lateral{
+        margin-right: 2rem;
+        background-color: gray;
+    }
+        
+
+    
 }
 
 .enlaces.is-active{
